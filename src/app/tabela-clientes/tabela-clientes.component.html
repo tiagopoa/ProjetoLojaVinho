@@ -1,0 +1,18 @@
+<h3>{{title}}</h3>
+<table class="table table-striped">
+    <thead>
+  <tr>
+    <th scope="col">Codigo</th><th scope="col">Nome</th><th scope="col">CPF</th><th scope="col">Valor</th><!--<th scope="col">Editar</th><th scope="col">Remover</th>-->
+  </tr>
+  <tr *ngFor='let cliente of clientes'>
+    <th scope="row">{{cliente.id}}</th>
+    <th>{{cliente.nome}}</th>
+    <th>{{cliente.cpf}}</th>
+    <th>{{cliente.valor}}</th>
+
+   
+    <!--<th><div class="buttons"> <input type="button" class="btn btn-primary" [routerLink]="['/edicaoCliente', cliente.id]" value="Editar"> </div></th>
+    <th><div class="buttons"> <input type="button" class="btn btn-primary" routerLink='/listaClientes' (click)="remover(cliente.id)" value="Remover"> </div></th>-->
+  </tr></thead>
+</table>
+<!--<a routerLink="/novoCliente">Novo Cliente</a>-->

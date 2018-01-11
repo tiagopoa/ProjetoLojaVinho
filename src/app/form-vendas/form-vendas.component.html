@@ -1,0 +1,25 @@
+<h3>{{title}}</h3>
+
+  <form> 
+    <div class="form-group">
+      <label for="codigo">Codigo</label>
+      <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Codigo.." autoGrow [(ngModel)]="venda.codigo">
+    </div>
+    <div class="form-group">
+      <label for="data">Data</label>
+      <input type="text" class="form-control" id="data" name="data" placeholder="Data.." [(ngModel)]="venda.data">
+    </div>
+    <div class="form-group">
+      <label for="cliente">Cliente</label>
+      <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Cliente.." [(ngModel)]="venda.cliente">
+    </div>
+    <div class="form-group">
+      <label for="valortotal">Valor Total</label>
+      <input type="text" class="form-control" id="valortotal" name="valortotal" placeholder="Valor Total.." [(ngModel)]="venda.valorTotal">
+    </div>      
+    
+      <input type="button" class="btn btn-primary" (click)="salvarVenda()" value="Salvar">
+      <input type="button" class="btn btn-primary" (click)="cancelar()" value="Cancelar">
+ 
+
+  </form>

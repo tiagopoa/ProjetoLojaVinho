@@ -1,0 +1,20 @@
+<h3>{{titulo}}</h3>
+<table class="table">
+    <thead class="thead-light">
+  <tr>
+    <th scope="col">Codigo</th><th scope="col">Produto</th><th scope="col">Variedade</th><th scope="col">País</th>
+    <th scope="col">Categoria</th><th scope="col">Safra</th><th scope="col">Preço</th><th scope="col">Editar</th><th scope="col">Remover</th>
+  </tr>
+  <tr *ngFor='let produto of produtos'>
+    <th scope="row">{{produto.codigo}}</th>
+    <td>{{produto.nomeProduto}}</td>
+    <td>{{produto.variedade}}</td>
+    <td>{{produto.pais}}</td>
+    <td>{{produto.categoria}}</td>
+    <td>{{produto.safra}}</td>
+    <td>{{produto.preco}}</td>
+    <td><a [routerLink]="['/edicaoProduto', produto.codigo]">Editar</a></td>
+    <td><a routerLink="/listaProdutos" (click)="remover(produto.codigo)">Remover</a></td>
+  </tr></thead>
+</table>
+<!--<a routerLink="/novoProduto">Novo produto</a>-->

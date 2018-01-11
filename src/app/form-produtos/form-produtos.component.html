@@ -1,0 +1,33 @@
+<h3>{{title}}</h3>
+<div class="form">
+  <form> 
+    <div class="form-group">
+      <label for="nomeProduto">Nome Produto</label>
+      <input type="text" class="form-control" id="nomeProduto" name="nomeProduto" placeholder="Nome Produto.." [(ngModel)]="produto.nomeProduto">
+    </div>
+    <div class="form-group">
+      <label for="variedade">Variedade</label>
+      <input type="text" class="form-control" id="variedade" name="variedade" placeholder="Variedade.." [(ngModel)]="produto.variedade">
+    </div>
+    <div class="form-group">
+      <label for="pais">País</label>
+      <input type="text" class="form-control" id="pais" name="pais" placeholder="País.." [(ngModel)]="produto.pais">
+    </div>
+    <div class="form-group">
+      <label for="categoria">Categoria</label>
+      <input type="text" class="form-control" id="categoria" name="categoria" placeholder="Categoria.." [(ngModel)]="produto.categoria">
+    </div>
+    <div class="form-group">
+      <label for="safra">Safra</label>
+      <input type="text" class="form-control" id="safra" name="safra" placeholder="Safra.." [(ngModel)]="produto.safra">
+    </div>
+    <div class="form-group">
+      <label for="preco">Preço</label>
+      <input type="text" class="form-control" id="preco" name="preco" placeholder="Preço.." [(ngModel)]="produto.preco">
+    </div>
+    <div class="buttons">
+      <input type="button" class="btn btn-primary" (click)="salvarProduto()" value="Salvar">
+      <input type="button" class="btn btn-primary" (click)="cancelar()" value="Cancelar">
+    </div>
+  </form>
+</div>
